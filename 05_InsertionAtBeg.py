@@ -6,7 +6,7 @@ class Node:
 class DoubleLL:
     def __init__(self,head=None):
         self.head=head
-    def InsertAtBeg(self,value):
+    def InsertAtEnd(self,value):
         temp=Node(value)
         if(self.head is None):
             self.head=temp
@@ -24,7 +24,7 @@ class DoubleLL:
         print("->None")
 
 Obj=DoubleLL()
-Obj.InsertAtBeg(90)
-Obj.InsertAtBeg(34)
-Obj.InsertAtBeg(12)
+Obj.InsertAtEnd(90)
+Obj.InsertAtEnd(34)
+Obj.InsertAtEnd(12)
 Obj.PrintLL()
